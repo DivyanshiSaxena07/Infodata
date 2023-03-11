@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div class='container' style='backgroundColor:lightgrey'>
+    <div class='row'> 
+    <div class='col md-4' style='float:left;marginTop:2%'>
+        <select id='myinput' class='btn btn-primary' onkeyup="searchFun()">
+    <option>Cs</option>
+    <option>IT</option>
+    <option>Ec</option>
+   </select>
+   </div>
+    
+   <select class='btn btn-primary' style='marginLeft:30%;marginTop:2%'>
+    <option>2020</option>
+    <option>2021</option>
+    <option>2022</option>
+   </select>
+  
+   </div>
+<table id='myTable' class="table table-bordered" style='marginTop:10%;backgroundColor:whitesmoke'>
+<thead>
+<tr>
+<th>S.No.</th>
+<th>Name</th>
+<th>Roll</th>
+<th>Branch</th>
+<th>DOJ</th>
+</tr>
+</thead>
+<tbody>
+
+            <tr>
+                <td>{item.sno}</td>
+                <td>{item.name}</td>
+                <td>{item.roll}</td>
+                <td>{item.branch}</td>
+                <td>{item.doj}</td>
+            </tr>
+   
+ </tbody>
+</table>
+</div>
+<script>
+    function searchFun(){
+        let filter =document.getElementById('myinput').value.toUpperCase;
+        let myTable=document.getElementById('myTable');
+    }
+</script>
+</body>
+</html>
